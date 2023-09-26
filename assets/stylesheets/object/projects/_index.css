@@ -1,0 +1,106 @@
+/* 共通スタイルは外に書く */
+
+.wrapper {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.image {
+  margin: 0 auto;
+}
+
+.first-view {
+  padding: 34px;
+}
+
+.section:not(:first-child) {
+  border-top: solid #000000;
+}
+
+.heading {
+  margin-top: 15px;
+}
+
+.paragraph {
+  margin-top: 15px;
+}
+
+.column-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 34px;
+}
+
+@media screen and (min-width:796px) {
+
+  .heading {
+    font-size: 26px;
+  }
+
+  .secondary-heading {
+    font-size: 26px;
+    height: 70px;
+  }
+
+  .paragraph {
+    font-size: 12px;
+  }
+
+  .card {
+    width: 30%;
+    max-width: 300px;
+  }
+
+  .card:nth-child(n+4) {
+    margin-top: 30px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+
+  .card:not(:first-child) {
+    margin-left: 25px;
+  }
+
+  .card:nth-child(4) {
+    margin-left: 0px;
+  }
+
+  .content:not(:first-child) {
+    margin-top: 34px;
+  }
+
+}
+
+@media screen and (max-width:795px) {
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .paragraph {
+    font-size: 15.5px;
+  }
+
+  .column-area {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width:795px;
+    text-align: center;
+  }
+
+  .card:not(:first-child) {
+    margin-top: 34px;
+  }
+}
+
